@@ -1,3 +1,23 @@
 .index-title {
   font-size: 100px;
 }
+
+.theme-img {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.img-text {
+  font-weight: 700;
+
+  @include pc {
+    font-weight: 900;
+  }
+}
+
+.card-border {
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
