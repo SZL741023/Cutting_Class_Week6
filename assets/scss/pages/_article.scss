@@ -1,0 +1,9 @@
+.extend-reading-padding {
+  padding-top: 1.25rem;
+  padding-bottom: 3.75rem;
+
+  @include pc {
+    padding-top: 1.25rem;
+    padding-bottom: 6.25rem;
+  }
+}
