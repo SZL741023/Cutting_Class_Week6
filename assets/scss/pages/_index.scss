@@ -21,3 +21,17 @@
   border-left: 0px;
   border-right: 0px;
 }
+
+.article-border-bottom {
+  border-bottom: 1px solid white;
+
+  @include pad {
+    border-bottom: 1px solid #343A40;
+  }
+}
+
+.read-more-font {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Newsreader, sans-serif;
+}

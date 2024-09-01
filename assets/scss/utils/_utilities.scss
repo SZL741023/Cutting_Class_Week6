@@ -2,7 +2,14 @@ $utilities: map-merge($utilities, ("font-size": map-merge(map-get($utilities, "f
         (responsive: true),
       ),
     ));
-
+$utilities: map-merge($utilities, ("color": map-merge(map-get($utilities, "color"),
+        (responsive: true),
+      ),
+    ));
+$utilities: map-merge($utilities, ("border": map-merge(map-get($utilities, "border"),
+        (responsive: true),
+      ),
+    ));
 $utilities: map-merge($utilities,
     ("rounded-top-left": (property: border-top-left-radius,
         class: rounded-top-left,

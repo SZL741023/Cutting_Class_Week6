@@ -1,4 +1,11 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-sm-border-top {
+  border-top: 1px solid #adb5bd;
+  @include pc {
+    border-top: 0px solid #000;
+  }
+}
+.footer-lg-border-top {
+  @include pc {
+    border-top: 1px solid #adb5bd;
+  }
 }
