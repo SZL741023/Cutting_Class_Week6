@@ -35,3 +35,95 @@
   font-size: 20px;
   font-family: Newsreader, sans-serif;
 }
+
+.promotion-bg {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 217px;
+    height: 73px;
+    background-image: url(/assets/images/bg-1.png);
+    background-repeat: no-repeat;
+    left: 4px;
+    bottom: 0px;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 188px;
+    background-image: url(/assets/images/bg-2.png);
+    background-repeat: no-repeat;
+    right: -32px;
+    bottom: 0px;
+  }
+
+  @include media-breakpoint-down(md) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      right: -100px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &::after {
+      background-image: url("/assets/images/bg-2-sm.png");
+      width: 160px;
+      height: 96px;
+      right: -48px;
+    }
+  }
+}
+
+.promotion-img-y {
+  display: none;
+
+  @include pc {
+    display: inline-block;
+    left: 4px;
+    bottom: -8px;
+  }
+}
+
+.promotion-img-g {
+  right: -48px;
+  bottom: -8px;
+
+  @include pc {
+    right: -32px;
+  }
+}
+
+.look-list {
+  a:hover {
+    color: #569573;
+  }
+}
+
+.list-group-item {
+  &::before {
+    content: "˙  ";
+  }
+}
+
+.taste-life-card-title {
+  font-size: 40px;
+  font-weight: 900;
+
+  @include pc {
+    font-size: 52px;
+  }
+}
+
+.fill-icon {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
