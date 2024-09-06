@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Front Page</title>
     <script type="module" crossorigin src="/Cutting_Class_Week6/assets/main-573ccf48.js"></script>
     <link rel="stylesheet" href="/Cutting_Class_Week6/assets/main-b45af246.css">
@@ -80,7 +82,12 @@
     </div>
     <!-- banner -->
     <section class="container px-0 px-lg-2 py-0 py-lg-10">
-      <div class="mb-8 rounded-3 position-relative">
+      <div
+        class="mb-8 rounded-3 position-relative"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <picture>
           <source
             media="(min-width: 768px)"
@@ -823,7 +830,10 @@
     </p>
   </div>
 </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
   </body>
 </html>
